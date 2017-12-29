@@ -13,6 +13,6 @@ Note: The fields extracted, missing_bytes and avg_bytes_missing are precentages 
 
 Two redefinable options (shown below) are available to make adjusting behavior a little easier. The first, summary_interval, can be used to adjust how long summary statistics are gathered, and how often they are logged. The second, log_to_reporter, is a boolean for determining if file stats will be written to the reporter log or to a seperate log stream named file_stats. Simply changing this value to 'F' will create a seperate, customized log stream.  Only the format is different between the two options, the fields and values are the same.
 
-    const summary_interval: interval = 1min &redef;
-    const log_to_reporter: bool = T &redef;
+    file_stats::summary_interval : interval, default = 1min 
+    file_stats::log_to_reporter : bool, default = T 
  
