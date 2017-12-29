@@ -1,6 +1,6 @@
 file_stats uses Bro's SumStats Framework to track metrics about the types of files seen, what is being extracted and and the affects data loss is having on the completeness of analyzed files.
 
-On every summary_interval a collection of metrics are logged about each file type observed in the environment.
+On every summary_interval a collection of metrics are logged about each file type observed in the environment.  Specifically, each entry in the log will contain the following:
 
      mime_type:  standard MIME identifier for the file type
      file_count:  the number of files seen of this type  
